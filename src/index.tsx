@@ -13,13 +13,13 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <QueryClientProvider client={queryClient}>
+    {/* <QueryClientProvider client={queryClient}> */}
       <RecoilRoot>
         <React.Suspense fallback={<div>Loading...</div>}>
           <App />
         </React.Suspense>
       </RecoilRoot>
-    </QueryClientProvider>
+    {/* </QueryClientProvider> */}
   </React.StrictMode>
 );
 
